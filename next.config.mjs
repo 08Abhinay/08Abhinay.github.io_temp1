@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Emit a fully static export for GitHub Pages
+  output: 'export',
+
+  // If you prefer “/page/” folders instead of “page.html” files, uncomment:
+  // trailingSlash: true,
+
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +15,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
