@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhinay Shankar Belde - Portfolio</title>
+    <title>Artist Portfolio - Creative Professional</title>
+    <meta name="description" content="Professional portfolio showcasing creative work, research, and experience in digital arts and technology.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="dark-theme">
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">Abhinay Belde</div>
+            <div class="nav-brand">Portfolio</div>
             
             <!-- Desktop Navigation -->
             <div class="nav-menu">
-                <a href="#about" class="nav-link active">About</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#research" class="nav-link">Research</a>
                 <a href="#publications" class="nav-link">Publications</a>
@@ -25,25 +33,28 @@
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-sun"></i>
-                </button>
             </div>
             
             <!-- Mobile Navigation -->
             <div class="mobile-nav">
-                <button class="theme-toggle mobile" id="mobileThemeToggle">
+                <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
+            
+            <!-- Desktop Theme Toggle -->
+            <button class="theme-toggle" style="display: none;" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
         </div>
         
-        <!-- Mobile Menu -->
-        <div class="mobile-menu-overlay" id="mobileMenu">
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="mobile-menu-overlay">
             <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link active">Home</a>
                 <a href="#about" class="mobile-nav-link">About</a>
                 <a href="#skills" class="mobile-nav-link">Skills</a>
                 <a href="#research" class="mobile-nav-link">Research</a>
@@ -58,49 +69,53 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="about" class="hero">
+    <section id="home" class="hero">
         <canvas id="particleCanvas"></canvas>
         <div class="hero-content">
-            <h1 class="hero-title">
-                Abhinay Shankar <span class="text-primary">Belde</span>
-            </h1>
-            <p class="hero-subtitle">Computer Scientist & AI Researcher</p>
+            <h1 class="hero-title">Creative Professional</h1>
+            <p class="hero-subtitle">Digital Artist & Technology Innovator</p>
             <p class="hero-description">
-                Master's in Computer Science at Purdue University Fort Wayne | Deep Learning, HPC & AI Research
+                Passionate about creating innovative digital experiences through the intersection of art, technology, and human-centered design. 
+                Specializing in interactive media, research, and cutting-edge creative solutions.
             </p>
             <div class="hero-social">
-                <a href="mailto:abhinaybelde@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/abhinay-belde-3a384a1a0/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/08Abhinay" target="_blank" class="social-link">
+                <a href="https://github.com" class="social-link" aria-label="GitHub">
                     <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:contact@example.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p class="about-paragraph highlight">
-                    Hi, I'm <strong>Abhinay Shankar Belde</strong>, a <strong>computer scientist and researcher</strong> pursuing my <strong>Master's in Computer Science</strong> at <strong>Purdue University Fort Wayne</strong>.
+                    I am a passionate creative professional with a deep interest in the intersection of art, technology, and human experience.
                 </p>
                 <p class="about-paragraph">
-                    My academic journey revolves around <strong class="text-primary">deep learning, high-performance computing (HPC), and AI research</strong>. Currently, I am working on a <strong class="text-primary">hybrid IJEPA + Stable Diffusion + GAN pipeline</strong> to tackle <strong class="text-primary">data scarcity in medical imaging</strong>. Additionally, I explore <strong class="text-primary">NLP adversarial attacks</strong> to enhance model robustness, constantly pushing the boundaries of AI security and efficiency.
+                    My journey began with a fascination for digital storytelling and has evolved into a comprehensive exploration of 
+                    interactive media, user experience design, and emerging technologies. I believe in the power of creative expression 
+                    to solve complex problems and create meaningful connections.
                 </p>
                 <p class="about-paragraph">
-                    Previously, I worked as a <strong>Software Engineer at Infosys</strong>, where I developed <strong>full-stack applications, built REST APIs, and worked extensively with cloud-based tools like AWS and Docker</strong>. My experience spans <strong>deep learning, scalable cloud solutions, and HPC</strong>, shaping my problem-solving approach and technical expertise.
+                    Through my work, I strive to push the boundaries of what's possible in digital art and technology, always keeping 
+                    the human element at the center of innovation. Whether it's developing interactive installations, conducting research 
+                    on user behavior, or creating immersive digital experiences, I approach each project with curiosity and dedication.
                 </p>
                 <p class="about-paragraph">
-                    I am passionate about <strong class="text-primary">building and optimizing AI models</strong>, tackling complex research problems, and applying <strong class="text-primary">cutting-edge AI techniques</strong> to real-world applications. I thrive in environments that encourage <strong class="text-primary">continuous learning, collaboration, and innovation</strong>.
-                </p>
-                <p class="about-paragraph highlight">
-                    If you're interested in collaborating on research, discussing AI innovations, or exploring exciting opportunities, feel free to reach out!
+                    When I'm not working on creative projects, you can find me exploring new technologies, collaborating with other 
+                    artists and technologists, or sharing knowledge through workshops and speaking engagements.
                 </p>
             </div>
         </div>
@@ -109,74 +124,89 @@
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-header">
-                        <span class="skill-icon">🧠</span>
-                        <h3>Deep Learning Frameworks</h3>
+                        <i class="fas fa-palette skill-icon"></i>
+                        <h3>Creative Design</h3>
                     </div>
                     <ul class="skill-list">
-                        <li>PyTorch</li>
-                        <li>TensorFlow</li>
-                        <li>Keras</li>
+                        <li>Digital Art & Illustration</li>
+                        <li>UI/UX Design</li>
+                        <li>Brand Identity</li>
+                        <li>Motion Graphics</li>
+                        <li>3D Modeling</li>
                     </ul>
                 </div>
+                
                 <div class="skill-card">
                     <div class="skill-header">
-                        <span class="skill-icon">📚</span>
-                        <h3>Libraries</h3>
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>Development</h3>
                     </div>
                     <ul class="skill-list">
-                        <li>NumPy</li>
-                        <li>pandas</li>
-                        <li>Matplotlib</li>
-                        <li>scikit-learn</li>
-                        <li>cuDNN</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">⚡</span>
-                        <h3>High-Performance Computing</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>GPU Computing (CUDA)</li>
-                        <li>Parallel Processing</li>
-                        <li>HPC Clusters</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">💻</span>
-                        <h3>Programming Languages</h3>
-                    </div>
-                    <ul class="skill-list">
+                        <li>JavaScript/TypeScript</li>
+                        <li>React & Next.js</li>
                         <li>Python</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">🌐</span>
-                        <h3>Web Technologies</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>React</li>
+                        <li>WebGL & Three.js</li>
                         <li>Node.js</li>
-                        <li>HTML/CSS</li>
                     </ul>
                 </div>
+                
                 <div class="skill-card">
                     <div class="skill-header">
-                        <span class="skill-icon">☁️</span>
-                        <h3>Cloud and DevOps</h3>
+                        <i class="fas fa-vr-cardboard skill-icon"></i>
+                        <h3>Emerging Tech</h3>
                     </div>
                     <ul class="skill-list">
-                        <li>AWS (EC2, ECS, EFS, S3, CloudWatch, VPC)</li>
-                        <li>Git</li>
-                        <li>Docker</li>
+                        <li>AR/VR Development</li>
+                        <li>Machine Learning</li>
+                        <li>IoT Integration</li>
+                        <li>Blockchain</li>
+                        <li>AI Art Generation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-camera skill-icon"></i>
+                        <h3>Media Production</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Photography</li>
+                        <li>Video Editing</li>
+                        <li>Audio Production</li>
+                        <li>Live Streaming</li>
+                        <li>Content Creation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-users skill-icon"></i>
+                        <h3>Collaboration</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Project Management</li>
+                        <li>Team Leadership</li>
+                        <li>Client Relations</li>
+                        <li>Workshop Facilitation</li>
+                        <li>Mentoring</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>Analytics</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Data Visualization</li>
+                        <li>User Research</li>
+                        <li>A/B Testing</li>
+                        <li>Performance Metrics</li>
+                        <li>Market Analysis</li>
                     </ul>
                 </div>
             </div>
@@ -186,29 +216,34 @@
     <!-- Research Section -->
     <section id="research" class="research-section">
         <div class="container">
-            <h2 class="section-title">Current Research</h2>
+            <h2 class="section-title">Research Interests</h2>
             <div class="research-content">
                 <div class="research-card">
-                    <h3 class="research-title">Master's Thesis</h3>
+                    <h3 class="research-title">Human-Computer Interaction in Creative Spaces</h3>
                     <p class="research-description">
-                        <strong>Addressing Data Scarcity in Medical Imaging:</strong> A Hybrid Approach Combining IJEPA, Stable Diffusion, and GANs for Realistic Synthetic Data Generation <em>(In Progress → Thesis)</em>.
+                        Exploring how emerging technologies can enhance creative workflows and artistic expression.
                     </p>
-                    <p class="research-details">
-                        Building on IJEPA to provide latent embeddings that condition the generator in a Stable Diffusion + GAN pipeline. Aims to enhance noise modeling and produce high-fidelity synthetic images, improving overall representation learning.
-                    </p>
-                </div>
-                <div class="research-card">
-                    <h3 class="research-title">Natural Language Processing (NLP)</h3>
-                    <div class="research-items">
-                        <div class="research-item">
-                            <p class="research-description">
-                                <em class="status-submitted">Submitted to ACL 2024:</em> Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms to improve model robustness—uses score-based feedback for adversarial perturbations.
-                            </p>
+                    <div class="research-details">
+                        <div class="research-items">
+                            <div>
+                                <strong>Current Focus:</strong> <span class="status-ongoing">Ongoing</span><br>
+                                Investigating the impact of AI-assisted tools on creative decision-making processes and artistic authenticity.
+                            </div>
                         </div>
-                        <div class="research-item">
-                            <p class="research-description">
-                                <em class="status-ongoing">Ongoing:</em> Developing novel algorithms for hard-labeled adversarial attacks where model confidence scores are unavailable, focusing on robust text classification.
-                            </p>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <h3 class="research-title">Immersive Media and Spatial Computing</h3>
+                    <p class="research-description">
+                        Researching the potential of AR/VR technologies in creating meaningful interactive experiences.
+                    </p>
+                    <div class="research-details">
+                        <div class="research-items">
+                            <div>
+                                <strong>Status:</strong> <span class="status-submitted">Under Review</span><br>
+                                Developing frameworks for evaluating presence and engagement in virtual creative environments.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,30 +254,28 @@
     <!-- Publications Section -->
     <section id="publications" class="publications-section">
         <div class="container">
-            <h2 class="section-title">Publications & Research</h2>
+            <h2 class="section-title">Publications & Papers</h2>
             <div class="publications-grid">
                 <div class="publication-card">
                     <div class="publication-header">
                         <div class="publication-info">
-                            <h3 class="publication-title">Overcoming Black-box Attack Inefficiency with Hybrid and Dynamic N-nary Algorithms</h3>
-                            <p class="publication-venue">ACL 2024 (Submitted)</p>
+                            <h3 class="publication-title">Interactive Digital Art: Bridging Technology and Human Expression</h3>
+                            <p class="publication-venue">Journal of Digital Creativity</p>
                         </div>
                         <span class="status-badge under-review">Under Review</span>
                     </div>
                     <p class="publication-description">
-                        Novel approach to improve model robustness using score-based feedback for adversarial perturbations in NLP models.
+                        An exploration of how interactive digital art installations can create meaningful connections between 
+                        technology and human emotional expression, featuring case studies from recent exhibitions.
                     </p>
                     <div class="publication-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">Adversarial Attacks</span>
-                        <span class="tag">Model Robustness</span>
+                        <span class="tag">Digital Art</span>
+                        <span class="tag">HCI</span>
+                        <span class="tag">Interactive Media</span>
                     </div>
                     <div class="publication-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-code"></i> Source Code
-                        </a>
-                        <a href="#" class="btn btn-outline">
-                            <i class="fas fa-file-text"></i> Paper
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-file-pdf"></i> Draft
                         </a>
                     </div>
                 </div>
@@ -250,26 +283,23 @@
                 <div class="publication-card">
                     <div class="publication-header">
                         <div class="publication-info">
-                            <h3 class="publication-title">Addressing Data Scarcity in Medical Imaging: A Hybrid IJEPA + Stable Diffusion + GAN Approach</h3>
-                            <p class="publication-venue">Master's Thesis (In Progress)</p>
+                            <h3 class="publication-title">Machine Learning in Creative Workflows: A User Study</h3>
+                            <p class="publication-venue">ACM Conference on Creativity & Cognition</p>
                         </div>
                         <span class="status-badge in-progress">In Progress</span>
                     </div>
                     <p class="publication-description">
-                        Hybrid pipeline combining IJEPA, Stable Diffusion, and GANs for realistic synthetic medical image generation to address data scarcity.
+                        A comprehensive study examining how creative professionals integrate AI tools into their workflows 
+                        and the impact on creative output and satisfaction.
                     </p>
                     <div class="publication-tags">
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">Medical Imaging</span>
-                        <span class="tag">GANs</span>
-                        <span class="tag">Diffusion Models</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">User Study</span>
+                        <span class="tag">Creative Process</span>
                     </div>
                     <div class="publication-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-code"></i> Source Code
-                        </a>
-                        <a href="#" class="btn btn-outline">
-                            <i class="fas fa-file-text"></i> Paper
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-flask"></i> Research
                         </a>
                     </div>
                 </div>
@@ -277,25 +307,47 @@
                 <div class="publication-card">
                     <div class="publication-header">
                         <div class="publication-info">
-                            <h3 class="publication-title">Hard-labeled Adversarial Attacks for Text Classification</h3>
-                            <p class="publication-venue">Research Project (Ongoing)</p>
+                            <h3 class="publication-title">Virtual Reality as a Medium for Collaborative Art Creation</h3>
+                            <p class="publication-venue">International Conference on Virtual Reality</p>
                         </div>
                         <span class="status-badge ongoing">Ongoing</span>
                     </div>
                     <p class="publication-description">
-                        Developing novel algorithms for adversarial attacks in scenarios where model confidence scores are unavailable.
+                        Investigating the potential of VR environments for enabling remote collaborative art creation 
+                        and the unique challenges and opportunities this presents.
                     </p>
                     <div class="publication-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">Adversarial ML</span>
-                        <span class="tag">Text Classification</span>
+                        <span class="tag">Virtual Reality</span>
+                        <span class="tag">Collaboration</span>
+                        <span class="tag">Art Creation</span>
                     </div>
                     <div class="publication-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-code"></i> Source Code
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-code-branch"></i> Prototype
                         </a>
-                        <a href="#" class="btn btn-outline">
-                            <i class="fas fa-file-text"></i> Paper
+                    </div>
+                </div>
+                
+                <div class="publication-card">
+                    <div class="publication-header">
+                        <div class="publication-info">
+                            <h3 class="publication-title">Sustainable Digital Art Practices in the Age of NFTs</h3>
+                            <p class="publication-venue">Digital Arts Quarterly</p>
+                        </div>
+                        <span class="status-badge in-progress">In Progress</span>
+                    </div>
+                    <p class="publication-description">
+                        Examining the environmental impact of digital art distribution and exploring sustainable 
+                        alternatives for artists in the blockchain era.
+                    </p>
+                    <div class="publication-tags">
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">NFTs</span>
+                        <span class="tag">Digital Ethics</span>
+                    </div>
+                    <div class="publication-actions">
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-leaf"></i> Research
                         </a>
                     </div>
                 </div>
@@ -306,124 +358,144 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">Personality Prediction - 2.0</h3>
-                        <p class="project-period">Jan 2024 - Apr 2024</p>
+                        <h3 class="project-title">Interactive Art Installation</h3>
+                        <span class="project-period">2023 - Present</span>
                     </div>
                     <p class="project-description">
-                        Developed a platform using Django and React.js to provide high school students with MBTI personality predictions, leveraging NLP and machine learning models.
+                        A large-scale interactive installation that responds to visitor movements and emotions, 
+                        creating unique visual and audio experiences for each interaction.
                     </p>
                     <div class="project-highlights">
-                        <h4>Key Highlights:</h4>
+                        <h4>Key Features:</h4>
                         <ul>
-                            <li>Implemented state-of-the-art transformer-based models to analyze textual data</li>
-                            <li>Integrated MongoDB for scalable data storage</li>
-                            <li>Optimized backend performance using Python and Django</li>
+                            <li>Real-time motion tracking and emotion recognition</li>
+                            <li>Generative audio-visual content</li>
+                            <li>Multi-user collaborative experiences</li>
+                            <li>Cloud-based data analytics</li>
                         </ul>
                     </div>
                     <div class="project-technologies">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Machine Learning</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Abstractive Text Summarization</h3>
-                        <p class="project-period">Jan 2024 - Apr 2024</p>
-                    </div>
-                    <p class="project-description">
-                        Built an advanced text summarization system using deep learning techniques to generate concise and coherent summaries from long-form content.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Highlights:</h4>
-                        <ul>
-                            <li>Developed CNN-based model for text processing</li>
-                            <li>Leveraged TensorFlow, Keras, and scikit-learn</li>
-                            <li>Demonstrated expertise in deep learning for NLP</li>
-                        </ul>
-                    </div>
-                    <div class="project-technologies">
+                        <span class="tech-tag">OpenCV</span>
                         <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Transformers</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Image Coloring</h3>
-                        <p class="project-period">Sept 2023 - Dec 2023</p>
-                    </div>
-                    <p class="project-description">
-                        Developed a CNN-based model using TensorFlow and Keras to predict and generate color details for grayscale images, enhancing their visual quality.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Highlights:</h4>
-                        <ul>
-                            <li>Built CNN architecture for image colorization</li>
-                            <li>Used deep learning for image processing</li>
-                            <li>Enhanced visual quality of grayscale images</li>
-                        </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">CNN</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Purdue Marketplace (Telescope)</h3>
-                        <p class="project-period">Sept 2023 - Dec 2023</p>
-                    </div>
-                    <p class="project-description">
-                        Created Purdue e-commerce platform utilizing React, Node.js, HTML, CSS for seamless user experience with full-stack functionality.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Highlights:</h4>
-                        <ul>
-                            <li>Full-stack e-commerce platform development</li>
-                            <li>Managed GitHub repository for collaboration</li>
-                            <li>Implemented robust functionality and intuitive interface</li>
-                        </ul>
-                    </div>
-                    <div class="project-technologies">
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">WebRTC</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
                     </div>
                     <div class="project-actions">
-                        <a href="https://github.com/08Abhinay" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github"></i> GitHub
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">VR Creative Collaboration Platform</h3>
+                        <span class="project-period">2022 - 2023</span>
+                    </div>
+                    <p class="project-description">
+                        A virtual reality platform that enables artists from around the world to collaborate 
+                        on 3D art projects in real-time, with integrated voice chat and gesture recognition.
+                    </p>
+                    <div class="project-highlights">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Multi-user VR environment</li>
+                            <li>Real-time 3D modeling tools</li>
+                            <li>Voice and gesture communication</li>
+                            <li>Project version control</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Oculus SDK</span>
+                        <span class="tech-tag">Photon</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Blender API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-play"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">AI-Powered Art Generator</h3>
+                        <span class="project-period">2023</span>
+                    </div>
+                    <p class="project-description">
+                        A web application that uses machine learning to generate unique artworks based on 
+                        user inputs, style preferences, and emotional context.
+                    </p>
+                    <div class="project-highlights">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Style transfer algorithms</li>
+                            <li>Emotion-based color palettes</li>
+                            <li>Interactive parameter controls</li>
+                            <li>High-resolution output</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-external-link-alt"></i> Try It
+                        </a>
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fab fa-github"></i> Source
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Digital Art Marketplace</h3>
+                        <span class="project-period">2022</span>
+                    </div>
+                    <p class="project-description">
+                        A blockchain-based marketplace for digital art with focus on sustainability, 
+                        artist royalties, and community building.
+                    </p>
+                    <div class="project-highlights">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Eco-friendly blockchain integration</li>
+                            <li>Artist royalty system</li>
+                            <li>Community voting mechanisms</li>
+                            <li>Advanced search and filtering</li>
+                        </ul>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-tag">Solidity</span>
+                        <span class="tech-tag">Web3.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">IPFS</span>
+                        <span class="tech-tag">Polygon</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-primary btn-small">
+                            <i class="fas fa-external-link-alt"></i> Visit Site
+                        </a>
+                        <a href="#" class="btn btn-outline btn-small">
+                            <i class="fas fa-book"></i> Case Study
                         </a>
                     </div>
                 </div>
@@ -434,55 +506,56 @@
     <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title">Professional Experience</h2>
             <div class="experience-timeline">
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title">Graduate Research Assistant</h3>
-                        <p class="experience-company">Purdue University, Indiana, Fort Wayne</p>
-                        <span class="experience-period">Aug 2024 – Present</span>
+                        <div>
+                            <h3 class="experience-title">Senior Creative Technologist</h3>
+                            <p class="experience-company">Innovation Studio</p>
+                        </div>
+                        <span class="experience-period">2022 - Present</span>
                     </div>
                     <ul class="experience-responsibilities">
-                        <li>Master's Thesis: Investigating a hybrid IJEPA + Stable Diffusion + GAN pipeline to address data scarcity in medical imaging. Leveraging GPU-based HPC clusters for high-volume synthetic image generation.</li>
-                        <li>NLP Research: Transitioning from score-based adversarial attacks (ACL submission) to hard-labeled black-box scenarios, developing novel N-nary attack algorithms without model feedback.</li>
-                        <li>Hands-on experience with High-Performance Computing (HPC), training deep learning models on multi-node clusters.</li>
+                        <li>Lead cross-functional teams in developing cutting-edge interactive experiences for major brands</li>
+                        <li>Design and implement AR/VR solutions that have reached over 1M users globally</li>
+                        <li>Mentor junior developers and designers in emerging technology adoption</li>
+                        <li>Collaborate with research teams to explore new applications of AI in creative workflows</li>
+                        <li>Present findings at international conferences and industry events</li>
                     </ul>
                 </div>
                 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title">Software Engineer</h3>
-                        <p class="experience-company">Infosys Limited, Bangalore, India</p>
-                        <span class="experience-period">Sept 2021 – Aug 2023</span>
+                        <div>
+                            <h3 class="experience-title">Digital Art Director</h3>
+                            <p class="experience-company">Creative Agency</p>
+                        </div>
+                        <span class="experience-period">2020 - 2022</span>
                     </div>
                     <ul class="experience-responsibilities">
-                        <li>Led the development of UI menus and new features for the LMS VAM module, using Angular-based FINUX tool, Java, and JavaScript. Utilized UNIX for managing all project code in a cloud-based environment.</li>
-                        <li>Engineered custom REST APIs using Java, focusing on code reusability and Finacle Scripting. Managed source code with Git.</li>
-                        <li>Consistently leveraged AWS services (CloudWatch, EC2, ECS, EFS, S3, VPC) in an Agile environment.</li>
-                        <li>Containerized and deployed application updates by building and pushing Docker images to backend servers after each sprint.</li>
-                        <li>Automated deployment workflows using Docker, improving efficiency in pushing updates to cloud-based environments.</li>
+                        <li>Directed creative vision for digital campaigns reaching 10M+ impressions monthly</li>
+                        <li>Established new workflows integrating AI tools that improved team productivity by 40%</li>
+                        <li>Managed a team of 8 designers and developers across multiple time zones</li>
+                        <li>Developed brand guidelines and design systems for Fortune 500 clients</li>
+                        <li>Pioneered the agency's first VR marketing campaign, winning industry recognition</li>
                     </ul>
                 </div>
                 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-title">Career Advisor Intern (Part-Time)</h3>
-                        <p class="experience-company">The People's Corp, Bangalore, India</p>
-                        <span class="experience-period">Jan 2021 – Jul 2021</span>
+                        <div>
+                            <h3 class="experience-title">Interactive Media Designer</h3>
+                            <p class="experience-company">Tech Startup</p>
+                        </div>
+                        <span class="experience-period">2018 - 2020</span>
                     </div>
                     <ul class="experience-responsibilities">
-                        <li>Provided personalized career counseling (resume building, interview prep, career planning), tailored to client aspirations.</li>
-                    </ul>
-                </div>
-                
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Student & Assistant Teacher Intern</h3>
-                        <p class="experience-company">JSpiders Institute, Bangalore, India</p>
-                        <span class="experience-period">Feb 2021 – Aug 2021</span>
-                    </div>
-                    <ul class="experience-responsibilities">
-                        <li>Trained and certified in Java Full-Stack Development, Core and Advanced Java (J2EE), SQL, and PL/SQL.</li>
+                        <li>Created interactive prototypes and user interfaces for mobile and web applications</li>
+                        <li>Conducted user research and usability testing to inform design decisions</li>
+                        <li>Collaborated with engineering teams to ensure design feasibility and performance</li>
+                        <li>Developed the company's first design system, reducing development time by 30%</li>
+                        <li>Led workshops on design thinking and creative problem-solving</li>
                     </ul>
                 </div>
             </div>
@@ -500,27 +573,37 @@
                     </div>
                     <div class="education-details">
                         <div class="education-header">
-                            <h3 class="education-degree">Master's in Computer Science</h3>
-                            <span class="education-period">August 2023 – Present</span>
+                            <div>
+                                <h3 class="education-degree">Master of Fine Arts in Digital Media</h3>
+                                <p class="education-institution">University of Creative Arts</p>
+                                <p class="education-location">San Francisco, CA</p>
+                            </div>
+                            <span class="education-period">2016 - 2018</span>
                         </div>
-                        <p class="education-institution">Purdue University Fort Wayne</p>
-                        <p class="education-location">Fort Wayne, Indiana</p>
-                        <p class="education-focus"><strong>Focus:</strong> Deep Learning, High-Performance Computing, AI Research</p>
+                        <p class="education-focus">
+                            <strong>Focus:</strong> Interactive Media Design, Human-Computer Interaction, 
+                            Digital Storytelling. Thesis: "Emotional Resonance in Interactive Digital Art Installations"
+                        </p>
                     </div>
                 </div>
                 
                 <div class="education-item">
                     <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-university"></i>
                     </div>
                     <div class="education-details">
                         <div class="education-header">
-                            <h3 class="education-degree">Bachelor of Science in Mechanical Engineering</h3>
-                            <span class="education-period">July 2017 – May 2021</span>
+                            <div>
+                                <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                                <p class="education-institution">Tech University</p>
+                                <p class="education-location">Boston, MA</p>
+                            </div>
+                            <span class="education-period">2012 - 2016</span>
                         </div>
-                        <p class="education-institution">Amrita Vishwa Vidyapeetham University</p>
-                        <p class="education-location">Bangalore, India</p>
-                        <p class="education-focus"><strong>Focus:</strong> Engineering Fundamentals, Problem Solving</p>
+                        <p class="education-focus">
+                            <strong>Specialization:</strong> Computer Graphics, Machine Learning, Software Engineering. 
+                            Minor in Visual Arts. Graduated Magna Cum Laude.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -530,90 +613,72 @@
     <!-- Certifications Section -->
     <section id="certifications" class="certifications-section">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certifications & Awards</h2>
             <div class="certifications-grid">
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fab fa-aws"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Build Better Generative Adversarial Networks (GANs)</h3>
-                        <p class="certification-provider">DeepLearning.AI</p>
-                        <p class="certification-date">June 2024</p>
+                        <h3 class="certification-title">AWS Certified Solutions Architect</h3>
+                        <p class="certification-provider">Amazon Web Services</p>
+                        <p class="certification-date">2023</p>
                     </div>
-                    <a href="https://coursera.org/share/2b32d7340047d404f39d4f6be61efdc0" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
                 
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fab fa-google"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Natural Language Processing with Classification and Vector Spaces</h3>
-                        <p class="certification-provider">DeepLearning.AI</p>
-                        <p class="certification-date">July 2024</p>
+                        <h3 class="certification-title">Google Cloud Professional ML Engineer</h3>
+                        <p class="certification-provider">Google Cloud</p>
+                        <p class="certification-date">2023</p>
                     </div>
-                    <a href="https://coursera.org/share/e14ab6971fd0fe8d20dea360164e8ca0" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
                 
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fas fa-trophy"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Supervised Machine Learning: Regression and Classification</h3>
-                        <p class="certification-provider">Stanford Online</p>
-                        <p class="certification-date">July 2024</p>
+                        <h3 class="certification-title">Digital Arts Innovation Award</h3>
+                        <p class="certification-provider">Creative Industry Council</p>
+                        <p class="certification-date">2022</p>
                     </div>
-                    <a href="https://coursera.org/share/a713aa97b68dbd3da9939eca32b3e8aa" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
                 
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fab fa-unity"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Convolutional Neural Networks</h3>
-                        <p class="certification-provider">DeepLearning.AI</p>
-                        <p class="certification-date">Feb 2024</p>
+                        <h3 class="certification-title">Unity Certified Expert</h3>
+                        <p class="certification-provider">Unity Technologies</p>
+                        <p class="certification-date">2022</p>
                     </div>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/Q9LTVC42K8K3" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
                 
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fas fa-medal"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Neural Networks and Deep Learning</h3>
-                        <p class="certification-provider">DeepLearning.AI</p>
-                        <p class="certification-date">Jan 2024</p>
+                        <h3 class="certification-title">Best Interactive Installation</h3>
+                        <p class="certification-provider">Digital Arts Festival</p>
+                        <p class="certification-date">2021</p>
                     </div>
-                    <a href="https://www.coursera.org/account/accomplishments/records/6LDJ5UA4YHRQ" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
                 
                 <div class="certification-card">
                     <div class="certification-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fab fa-adobe"></i>
                     </div>
                     <div class="certification-content">
-                        <h3 class="certification-title">Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</h3>
-                        <p class="certification-provider">DeepLearning.AI</p>
-                        <p class="certification-date">Jan 2024</p>
+                        <h3 class="certification-title">Adobe Certified Expert</h3>
+                        <p class="certification-provider">Adobe Systems</p>
+                        <p class="certification-date">2020</p>
                     </div>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/YYVENH3P7V5B" target="_blank" class="btn btn-outline btn-small">
-                        <i class="fas fa-external-link-alt"></i> View Certificate
-                    </a>
                 </div>
             </div>
         </div>
@@ -623,63 +688,80 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-header">
-                <h2 class="section-title">Get in Touch</h2>
+                <h2 class="section-title">Get In Touch</h2>
                 <p class="contact-subtitle">
-                    Interested in collaborating on research, discussing AI innovations, or exploring exciting opportunities? Let's connect!
+                    I'm always interested in new opportunities, collaborations, and creative challenges. 
+                    Let's create something amazing together!
                 </p>
             </div>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
+                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details">
+                        <div>
                             <p class="contact-label">Email</p>
-                            <a href="mailto:abhinaybelde@gmail.com" class="contact-link">abhinaybelde@gmail.com</a>
+                            <a href="mailto:contact@example.com" class="contact-link">contact@example.com</a>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="contact-details">
+                        <div>
                             <p class="contact-label">Phone</p>
-                            <a href="tel:+12605154640" class="contact-link">(260) 515-4640</a>
+                            <a href="tel:+1234567890" class="contact-link">+1 (234) 567-8900</a>
                         </div>
                     </div>
                     
-                    <h3>Connect With Me</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <span class="contact-link">San Francisco, CA</span>
+                        </div>
+                    </div>
+                    
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/abhinay-belde-3a384a1a0/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/08Abhinay" target="_blank" class="social-link">
+                        <a href="https://github.com" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:abhinaybelde@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or collaboration idea..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
                     </form>
                 </div>
             </div>
